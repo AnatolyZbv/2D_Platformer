@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rb;
+   [SerializeField] private float speedX = 1f;
+
+     private float horizontal = 0f;
+     private Rigidbody2D rb;
+   
+    const float speedXMultiplier = 450f;
     void Start() {
         rb = GetComponent<Rigidbody2D>();
   
     }
-    void Update () {
-      
-    }
+   void Update() {
+      horizontal = Input.GetAxis("Horizontal"); //-1...+1
+   }
     void FixedUpdate() {
-        rb.velocity = new Vector2(1f, rb.velocity.y);
+        rb.velocity = new Vector2(horizontal*speedX*speedXMultiplier*Time.fixedDeltaTime, rb.velocity.y);
     }
 }

@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 65621579}
   - component: {fileID: 65621578}
   - component: {fileID: 65621580}
-  - component: {fileID: 65621581}
   - component: {fileID: 65621582}
+  - component: {fileID: 65621581}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -202,8 +202,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65621577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -0.13, y: 0.83, z: 0}
+  m_LocalScale: {x: 7.494538, y: 18.372953, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -228,7 +228,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &65621581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,8 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882da3d2941d2514590b409f364b6faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &65621582
-CircleCollider2D:
+  speedX: 1
+--- !u!70 &65621582
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -254,9 +255,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0008737505}
-  serializedVersion: 2
-  m_Radius: 0.086893804
+  m_Offset: {x: -0.0008690806, y: 0.00029401097}
+  m_Size: {x: 0.18087986, y: 0.18092467}
+  m_Direction: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,8 +418,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847285529}
   m_LocalRotation: {x: -0, y: -0, z: 0.00019416132, w: -1}
-  m_LocalPosition: {x: 0.07, y: -2.7052, z: 0}
-  m_LocalScale: {x: 14.493803, y: 0.6659777, z: 1}
+  m_LocalPosition: {x: 0.1583, y: -4.1012, z: 0}
+  m_LocalScale: {x: 16.155502, y: -1.3684536, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
